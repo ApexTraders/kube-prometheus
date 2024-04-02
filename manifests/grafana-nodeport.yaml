@@ -1,0 +1,35 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app.kubernetes.io/component: grafana
+    app.kubernetes.io/instance: prometheus
+    app.kubernetes.io/name: grafana
+    app.kubernetes.io/part-of: kube-prometheus
+    app.kubernetes.io/version: 10.4.0
+  name: grafana-node-port-service
+  namespace: monitoring
+  resourceVersion: "11242"
+  uid: c7d0018a-cc83-43e0-8eea-7af8f7db7800
+spec:
+  clusterIP: 10.43.163.219
+  clusterIPs:
+  - 10.43.163.219
+  externalTrafficPolicy: Cluster
+  internalTrafficPolicy: Cluster
+  ipFamilies:
+  - IPv4
+  ipFamilyPolicy: SingleStack
+  ports:
+  - nodePort: 32451
+    port: 80
+    protocol: TCP
+    targetPort: 3000
+  selector:
+    app.kubernetes.io/component: grafana
+    app.kubernetes.io/name: grafana
+    app.kubernetes.io/part-of: kube-prometheus
+  sessionAffinity: None
+  type: NodePort
+status:
+  loadBalancer: {}
