@@ -9,8 +9,6 @@ metadata:
     app.kubernetes.io/version: 10.4.0
   name: grafana-node-port-service
   namespace: monitoring
-  resourceVersion: "11242"
-  uid: c7d0018a-cc83-43e0-8eea-7af8f7db7800
 spec:
   clusterIP: 10.43.163.219
   clusterIPs:
