@@ -12,7 +12,7 @@ spec:
   type: NodePort
   ports:
   - protocol: TCP
-    port: 3000
+    port: 80
     targetPort: web
     nodePort: 30921
   selector:
