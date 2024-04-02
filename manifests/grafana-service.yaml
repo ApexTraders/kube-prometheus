@@ -13,7 +13,7 @@ spec:
   ports:
   - protocol: TCP
     port: 3000
-    targetPort: 3000
+    targetPort: web
     nodePort: 30920
   selector:
     app.kubernetes.io/component: grafana
