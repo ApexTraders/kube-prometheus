@@ -1,9 +1,11 @@
 module _ // go.mod created for tooling dependencies
 
-go 1.19
+go 1.21
+
+toolchain go1.22.2
 
 require (
-	github.com/armosec/kubescape v1.0.139
+	github.com/armosec/kubescape v1.0.165
 	github.com/brancz/gojsontoyaml v0.1.0
 	github.com/bwplotka/mdox v0.9.1-0.20220718065926-6a6aac7d5d30
 	github.com/google/go-jsonnet v0.20.0
@@ -32,10 +34,10 @@ require (
 	github.com/antchfx/htmlquery v1.2.3 // indirect
 	github.com/antchfx/xmlquery v1.3.4 // indirect
 	github.com/antchfx/xpath v1.1.10 // indirect
-	github.com/armosec/armoapi-go v0.0.40 // indirect
-	github.com/armosec/k8s-interface v0.0.50 // indirect
-	github.com/armosec/opa-utils v0.0.78 // indirect
-	github.com/armosec/rbac-utils v0.0.10 // indirect
+	github.com/armosec/armoapi-go v0.0.41 // indirect
+	github.com/armosec/k8s-interface v0.0.56 // indirect
+	github.com/armosec/opa-utils v0.0.97 // indirect
+	github.com/armosec/rbac-utils v0.0.12 // indirect
 	github.com/armosec/utils-go v0.0.3 // indirect
 	github.com/armosec/utils-k8s-go v0.0.1 // indirect
 	github.com/aws/aws-sdk-go v1.43.5 // indirect
