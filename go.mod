@@ -1,9 +1,12 @@
 module github.com/prometheus-operator/kube-prometheus
 
-go 1.19
+go 1.21
+
+toolchain go1.22.2
 
 require (
 	github.com/Jeffail/gabs v1.4.0
+	github.com/Jeffail/gabs/v2 v2.7.0
 	github.com/prometheus/client_golang v1.19.0
 	k8s.io/apimachinery v0.29.3
 	k8s.io/client-go v0.29.3
